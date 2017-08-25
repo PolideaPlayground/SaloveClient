@@ -20,9 +20,4 @@ class App extends Component {
   }
 }
 
-// styled(App)`
-
-
-// `
-
 export default App;
