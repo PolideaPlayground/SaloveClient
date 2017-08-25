@@ -4,11 +4,16 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
+import Logo from '../src/Logo';
+
 import { Button, Welcome } from '@storybook/react/demo';
 
 import TodayHeader from '../src/TodayHeader';
+import './NearestEvent.story'
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+
+storiesOf('Logo', module).add('to Storybook', () => <Logo />);
 
 storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
