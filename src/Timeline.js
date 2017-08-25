@@ -8,13 +8,17 @@ class Timeline extends Component {
             return <div>Loading</div>
         }
         else {
-            debugger
             return (
                 <ul>
                     {data.reservations.map(reservation => (
-                        <li key={reservation.id}>
+                        <li key={reservation.roomId}>
                             {reservation.start}
+                            <br/>
                             {reservation.end}
+                            <br/>
+                            {reservation.summary}
+                            <br/>
+                            <br/>
                         </li>
                     ))}
                 </ul>
@@ -26,9 +30,10 @@ class Timeline extends Component {
 const TimelineQuery = gql`
 query TimelineQuery {
     reservations {
-      id
+      roomId
       start
       end
+      summary
     }
   }
 `
