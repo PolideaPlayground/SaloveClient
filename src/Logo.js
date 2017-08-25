@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React from "react";
+import styled from "styled-components";
 
-import LogoStyle from '../src/LogoStyle';
+const LogoHeader = styled.div `
+	font-size: 144px;
+	font-weight: bold;
+	text-align: center;
+	color: #d0d8e8;
+	margin-bottom: 58px;
+`;
 
-class Logo extends Component {
-    render() {
-        return (
-            <LogoStyle>
-                Salove
-            </LogoStyle>
-        );
-    }
+export default function Logo() {
+	return <LogoHeader>Salove</LogoHeader>
 }
-
-export default Logo;

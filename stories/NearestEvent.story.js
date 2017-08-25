@@ -8,5 +8,5 @@ storiesOf('NearestEvent', module)
             {getStory()}
         </div>
     ))
-    .add('first nearest', () => <FirstNearestEvent summary='Beta meeting' />)
-    .add('second nearest', () => <SecondNearestEvent summary='Timeular meeting' />);
+    .add('first nearest', () => <FirstNearestEvent summary='Beta meeting' start={1503684141000}/>)
+    .add('second nearest', () => <SecondNearestEvent summary='Timeular meeting' start={1503684149000}/>);

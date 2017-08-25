@@ -4,7 +4,7 @@ import moment from 'moment'
 
 '4D5BCD'
 
-const TimeText = styled.span`
+const TimeText = styled.div`
     font-size: 32px;
     font-weight: bold;
     text-align: center;
@@ -16,6 +16,8 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 `
 
 const SummaryText = styled.div`
@@ -31,6 +33,11 @@ const SummaryText = styled.div`
     background: ${props => props.color}
 `
 
+const SummaryContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+`
 
 const Dot = styled.div`
     width: 17px;
@@ -46,11 +53,11 @@ const Line = styled.div`
 `
 
 const Summary = ({ color, summary }) => (
-    <Container>
+    <SummaryContainer>
         <Dot color={color}/>
         <Line color={color}/>
         <SummaryText color={color}>{summary}</SummaryText>
-    </Container>
+    </SummaryContainer>
 )
 
 function NearestEvent(props) {
