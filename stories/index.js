@@ -8,6 +8,8 @@ import Logo from '../src/Logo';
 
 import { Button, Welcome } from '@storybook/react/demo';
 
+import './NearestEvent.story'
+
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Logo', module).add('to Storybook', () => <Logo />);
