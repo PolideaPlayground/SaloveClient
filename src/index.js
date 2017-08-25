@@ -7,7 +7,7 @@ import { ApolloClient, createNetworkInterface, ApolloProvider } from 'react-apol
 
 const client = new ApolloClient({
     networkInterface: createNetworkInterface({
-      uri: 'http://b3f241e3.ngrok.io/',
+      uri: 'http://b3f241e3.ngrok.io/graphql',
     }),
   });
 
